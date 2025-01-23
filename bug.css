@@ -1,0 +1,1 @@
+The CSS rule `:nth-child(n)` is not working correctly for some elements.  I have a list of elements, and I'm trying to apply a style to every other item using `:nth-child(even)` or `:nth-child(odd)`, but it's not working as expected. For instance, only some elements in the list are being styled, not every other one.
