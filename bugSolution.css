@@ -1,0 +1,16 @@
+The problem might be caused by other selectors that are overriding the style. 
+To address this, ensure that the specificity of your `:nth-child` selector is high enough to override any conflicting styles. You can use more specific selectors or increase the specificity with the `!important` flag as a last resort (though this is generally discouraged).
+
+Here's a possible solution focusing on specificity, assuming your list elements have a class of 'list-item':
+
+```css
+.parent-container .list-item:nth-child(even) {
+  background-color: lightblue;
+}
+
+.parent-container .list-item:nth-child(odd) {
+  background-color: lightpink;
+}
+```
+
+Consider restructuring the HTML for clearer styling if other methods fail.  Ensure that the `:nth-child` selector is applied correctly and that there are no conflicting or more specific styles overriding it.
